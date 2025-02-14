@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --success: 125.58 77% 57.99%;
+    --success-foreground: 121.94 57.99% 64%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 116.38 56.99% 21%;
+    --success-foreground: 140.68 65% 33%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Catamaran";
+    src: url(/fonts/Catamaran/Catamaran-VariableFont_wght.ttf)
+      format("truetype-variations");
+    font-weight: 100 900;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root {
+  --qe-purple: oklch(76.78% 0.129 308.8);
+  --qe-teal: oklch(76.78% 0.129 181.17);
+  --qe-orange: oklch(76.78% 0.129 54.32);
+  --qe-purple-light: oklch(85% 0.1 308.8);
+  --qe-teal-light: oklch(85% 0.1 181.17);
+  --qe-orange-light: oklch(85% 0.1 54.32);
+  --qe-shadow: hsl(222.2 84% 4.9%);
+  --qe-title-shadow: rgba(8,8,8,0.25);
+}
+
+body {
+  background: url("/images/700x-bg-pattern-qecolor.jpeg") repeat;
+  background-size: 475px;
+}
+
+.dark-bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  z-index: 2;
+}
+
+.dark-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/images/700x-bg-pattern-qecolor.jpeg") repeat;
+  background-size: 550px;
+  filter: invert(80%) hue-rotate(180deg);
+  z-index: 0;
+}
+
+.qe-title {
+  text-shadow: 0px 1px 0px var(--qe-purple), 0px 2px 0px var(--qe-purple),
+    0px 3px 0px var(--qe-purple), 0px 4px 0px var(--qe-purple),
+    0px 4px 3px var(--qe-shadow), 0px 4px 24px var(--qe-shadow);
+}
+
+.qe-title-purple {
+  text-shadow: 0px 1px 0px var(--qe-purple-light), 0px 2px 0px var(--qe-purple-light),
+    0px 3px 0px var(--qe-purple-light), 0px 4px 0px var(--qe-purple),
+    0px 4px 3px var(--qe-title-shadow), 0px 4px 16px var(--qe-title-shadow);
+}
+
+.qe-title-teal {
+  text-shadow: 0px 1px 0px var(--qe-teal-light), 0px 2px 0px var(--qe-teal-light),
+    0px 3px 0px var(--qe-teal-light), 0px 4px 0px var(--qe-teal),
+    0px 4px 3px var(--qe-title-shadow), 0px 4px 24px var(--qe-title-shadow);
+}
+
+.qe-title-orange {
+  text-shadow: 0px 1px 0px var(--qe-orange-light), 0px 2px 0px var(--qe-orange-light),
+    0px 3px 0px var(--qe-orange-light), 0px 4px 0px var(--qe-orange),
+    0px 4px 3px var(--qe-title-shadow), 0px 4px 16px var(--qe-title-shadow);
+}
+
+
+
+.qe-bg-purple {
+  background: var(--qe-purple);
+}
+
+.qe-bg-teal {
+  background: var(--qe-teal);
+}
+
+.qe-bg-orange {
+  background: var(--qe-orange);
+}
+
+.qe-bg-purple:hover,
+.qe-bg-teal:hover,
+.qe-bg-orange:hover {
+  color: #191919;
+}
+
+.qe-bg-purple:hover {
+  background: var(--qe-purple-light);
+}
+
+.qe-bg-teal:hover {
+  background: var(--qe-teal-light);
+}
+
+.qe-bg-orange:hover {
+  background: var(--qe-orange-light);
+}
+
+.qe-gradient-purple {
+  background: rgb(207, 117, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(207, 117, 255) 0%,
+    rgb(59, 98, 195) 100%
+  );
+}
+
+.qe-gradient-orange {
+  background: rgb(255, 160, 130);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 160, 130) 0%,
+    rgb(222, 193, 91) 100%
+  );
+}
+
+.qe-gradient-teal {
+  background: rgb(87, 221, 198);
+  background: linear-gradient(
+    180deg,
+    rgb(87, 221, 198) 0%,
+    rgb(57, 182, 221) 100%
+  );
+}
+
+.paypal {
+  background: #f5bf1e;
+}
+
+.venmo {
+  background: #008dfe;
+}
+
+.kofi {
+  background: #914ce0;
+}
+
+.trivia-questions{
+  width: 300px;
+  height: 187px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 480px) {
+  .trivia-questions{
+    width: 480px;
+    height: 299px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trivia-questions{
+    width: 960px;
+    height: 569px;
+  }
+}
