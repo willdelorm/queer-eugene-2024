@@ -79,7 +79,7 @@ const Footer = () => {
               <a className="hidden"href="/terms-of-use">Terms of Use</a>
             </div>
             <div className="mb-6">
-              <a href="/api/auth/login">Sign In</a>
+              <a href="/signin">Sign In</a>
             </div>
             <div className="flex gap-6 text-4xl">
               <a href="https://www.reddit.com/r/QueerEugene/">
