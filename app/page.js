@@ -1,10 +1,7 @@
-import { Button } from "@/components/ui/button";
 import PageWrapper from "@/components/PageWrapper/PageWrapper";
-import { register as registerSwiper } from "swiper/element/bundle";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { getAllDocumentsFromCollection } from "@/utils/firebase.utils";
-
-registerSwiper();
+import Link from "next/link";
 
 const pageButtons = [
   {
@@ -48,7 +45,7 @@ const Page = async () => {
       </section>
       <section className="mx-auto p-6">
         <p className="text-center text-lg max-w-screen-md mx-auto">
-          Queer Eugene is a community-based organization started in 2021. Our mission is organizing support, resources, and community for queer folks in the state currently known as Oregon. 
+          Queer Eugene is a community-based organization started in 2021. Our mission is organizing support, resources, and community for queer folks in the state currently known as Oregon.
           The 3 areas we focus on are Resources, Education, and Community. We do our work through community partnership- Queer Eugene is run for the community by the community!
         </p>
       </section>
