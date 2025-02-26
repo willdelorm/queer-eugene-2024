@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import FormTemplates from "./FormTemplates";
+import { useState } from "react";
+import FormTemplates from "./formTemplates";
 
 export const forms = [
   { name: "Communication", id: "communication" },
