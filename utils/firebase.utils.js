@@ -14,14 +14,26 @@ import { nanoid } from "nanoid";
 
 // Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBo-9Oocuk7JO7pSu6cXopNADFkVDzOtM0",
-  authDomain: "qe-website-c271e.firebaseapp.com",
-  projectId: "qe-website-c271e",
-  storageBucket: "qe-website-c271e.appspot.com",
-  messagingSenderId: "107903849929",
-  appId: "1:107903849929:web:9807288710aee2fbfdc418",
-  measurementId: "G-R8P2739LVL",
+
+  apiKey: "AIzaSyBWxI2FWeR3YempaJn_8iYSP9d6QbdBSBI",
+
+  authDomain: "queer-eugene.firebaseapp.com",
+
+  databaseURL: "https://queer-eugene-default-rtdb.firebaseio.com",
+
+  projectId: "queer-eugene",
+
+  storageBucket: "queer-eugene.firebasestorage.app",
+
+  messagingSenderId: "916585906702",
+
+  appId: "1:916585906702:web:9c03838866849f707fb25f",
+
+  measurementId: "G-WH67VNC456"
+
 };
+
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
