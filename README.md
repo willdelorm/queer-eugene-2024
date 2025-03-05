@@ -55,7 +55,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -68,8 +67,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Home Page][product-screenshot]
+
 <p>Since its inception in 2021, Queer Eugene has grown rapidly. The previous version of their website was written in plain HTML/CSS and quickly outgrew its original scope. I was brought on to co-build a more mature site that could support the pace of growth in the organization.</p>
+
 <p>The primary purpose of the redesign was to allow Queer Eugene's administration to better manage an ever-expanding list of queer resources. This requirement lead to setting up a database to store all of their data and an admin dashboard for organization staff to interface with the database.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -120,23 +121,20 @@ To get a local copy up and running follow these simple steps:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Resource Center
+<p>The primary purpose for this website is to provide a wide array of resources for the queer communities of Oregon. To implement this, we spun up a Google Firestore database to hold the data and built a dashboard to manage it.</p>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<img src="public/images/readme/dashboard.png" alt="Dashboard">
+<img src="public/images/readme/add-edit-form.png" alt="Form to add/edit database entries">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p>Visitors can view the resources, organized in tables that could be sorted and filtered.</p>
 
+<img src="public/images/readme/resources.png" alt="resource page and table">
 
+### Contact Form
+<p>Whether for general communication or to submit new resources, the contact form provided multiple options to get in touch with the organization.</p>
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/willdelorm/queer-eugene-2024/issues) for a full list of proposed features (and known issues).
+<img src="public/images/readme/contact-form.png" alt="contact form">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,9 +187,11 @@ Project Link: [https://github.com/willdelorm/queer-eugene-2024](https://github.c
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Trystan Weeks](https://github.com/tryweeks) - Co-creator
+* [Shadcn](https://ui.shadcn.com/) - Components
+* [Firebase](https://firebase.google.com/) - Database
+* [React-hook-form](https://react-hook-form.com/) - Form handling
+* [Zod](https://zod.dev/) - Form schema
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +211,7 @@ Project Link: [https://github.com/willdelorm/queer-eugene-2024](https://github.c
 [license-url]: https://github.com/willdelorm/queer-eugene-2024/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/willdelorm
-[product-screenshot]: public/images/ss-homepage.png
+[product-screenshot]: public/images/readme/homepage.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
